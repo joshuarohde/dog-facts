@@ -6,32 +6,35 @@
   <title>DOM Manipulation Example</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Hammersmith+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Hammersmith+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Luckiest+Guy&display=swap" rel="stylesheet">
 </head>
 <body>
 <main>
 
 <div id="doggy">
+    <!-- Background Video -->
+    <video id="backgroundVideo" autoplay muted loop>
+        <source src="assets/dog-mob.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
     <div id="title">
         <h2>*BARK BARK*</h2>
         <h1>BOOP MY NOSE TO GET A FACT!</h1>
         <h2>*BARK BARK*</h2>
     </div>
-
-
-
-
 </div>
-<div>
+
+<div id="fact-section" style="display: none;">
     <section>
-        <p id="fact">Dog Fact Loading…</p>
+        <p id="dog-fact">Dog Fact Loading…</p>
         <p id="img">Cute Picture Loading…</p>
-        <button><h2>GO BACK TO THE DOGGY</h2></button>
+        <button id="back-button"><h2>GO BACK TO THE DOGGY</h2></button>
     </section>
 </div>
+
 </main>
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
