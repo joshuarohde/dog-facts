@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     doggyDiv.addEventListener('click', () => {
         changeBackgroundColor(); // Change the background color
         doggyDiv.style.display = 'none';
-        factSection.style.display = 'block';
+        factSection.style.display = 'grid';
     });
 
     // Show the doggy div and hide the fact section on button click

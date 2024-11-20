@@ -42,29 +42,70 @@ margin: 0%;
 
     p{
         font-size: 4.5vw;
+        font-family: 'Albert Sans', cursive;
+        letter-spacing: 0em; /*Adjust the space between the letters*/
+        font-weight: 800;
+        padding-bottom: 1vw;
     }
 
-#fact-section{/*The fact that will be updated with the API*/
+    #fact-section {
+        display: grid; /* Enable grid layout */
+        grid-template-rows: 1fr 2fr 1fr; /* Three rows: top, middle (section), bottom */
+        height: 100vh; /* Full viewport height */
+        width: 100vw; /* Full viewport width */
+        justify-items: center; /* Center items horizontally */
+        align-items: center; /* Center items vertically */
+        margin: 0; /* Remove margins */
+        overflow: hidden; /* Prevent overflow */
+    }
 
+#content{
+    background-color: white;
+    width: 100%; /* Full width of the viewport */
+    height: 100%; /* Full width of the viewport */
+    text-align: center; /* Center text inside */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visibility */
 }
+
+section{
+    width: 100%;
+    height: 100%;    
+    display: grid; /* Use Grid layout */
+    grid-template-rows: 2fr 1fr; /* Two rows: one for content, one for the button */
+    height: 100%; /* Full height of the container */
+    width: 100%; /* Full width of the container */
+    justify-items: center; /* Center items horizontally */
+    align-items:start;
+    
+}
+
 
 #img{/*The img section that will be updated with the API*/
 
 }
 
-button{/*The button to go back to the dog screen*/
-
-    font-family: 'Luckiest Guy', cursive;
-    letter-spacing: 0.1em; /*Adjust the space between the letters*/
+button {
+    margin: 2vw;
+    font-family: 'Albert Sans', cursive;
+    letter-spacing: 0.1em; /* Adjust the space between the letters */
+    color: white;
+    background-color: black;
+    padding: 1rem 2rem; /* Adjust padding for the button */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Optional: Rounded button */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center;
 }
 
+button:hover {
+    background-color: #4f0808; /* Optional: Change background on hover */
+}
 
 
 
 
 .luckiest-guy-regular {/*The adjustments for the font itself*/
     font-family: "Luckiest Guy", cursive;
-    font-weight: 400;
     font-style: normal;
     
   }
