@@ -1,0 +1,52 @@
+
+body{/*Adjust the overall page*/
+
+font-family: 'Luckiest Guy', cursive; /*Changes the font to use 'Luckiest Guy'*/
+letter-spacing: 0.2em; /*Adjust the space between the letters*/
+
+}
+
+#doggy{/*Adjust the div that has the dog video and title inside*/
+
+}
+
+#title{/*Adjust the div that has the title inside of it*/
+
+}
+
+    h1{
+        font-size: 3vw;}
+
+    h2{
+        font-size: 2vw;
+    }
+
+    p{
+        font-size: 1.5vw;
+    }
+
+#fact{/*The fact that will be updated with the API*/
+
+}
+
+#img{/*The img section that will be updated with the API*/
+
+}
+
+button{/*The button to go back to the dog screen*/
+
+    font-family: 'Luckiest Guy', cursive;
+}
+
+
+
+
+
+.luckiest-guy-regular {/*The adjustments for the font itself*/
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    
+  }
+
+
