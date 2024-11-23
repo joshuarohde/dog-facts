@@ -1,45 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Sets the character encoding and viewport for the page -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Page title -->
   <title>DOM Manipulation Example</title>
+
+  <!-- Link to the CSS file for styling -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Preconnect to Google Fonts for better performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Link to Google Fonts for custom fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Hammersmith+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Luckiest+Guy&display=swap" rel="stylesheet">
 </head>
 <body>
 <main>
-
-<div id="doggy">
-    <!-- Background Video -->
-    <video id="backgroundVideo" autoplay muted loop>
+  <!-- Section for the background video -->
+  <div id="doggy">
+    <!-- Adds a looping background video -->
+    <video id="backgroundVideo" autoplay muted loop aria-hidden="true">
         <source src="assets/dog-mob.mp4" type="video/mp4">
+        <!-- Fallback message if the video tag is not supported -->
         Your browser does not support the video tag.
     </video>
 
+    <!-- Title text that appears over the video -->
     <div id="title">
         <h2>*BARK BARK*</h2>
-        <h1>BOOP MY NOSE TO GET A FACT!</h1>
+        <h1>BOOP MY SNOOT TO GET A FACT!</h1>
         <h2>*BARK BARK*</h2>
     </div>
-</div>
+  </div>
 
-<div id="fact-section" style="display: none;">
-    <div><br></div> <!-- Empty top row -->
-    <section>
-        <div id="content">
-        <p id="dog-fact">Dog Fact Loading…</p>
-        <p id="img">Cute Picture Loading…</p>
-        </div>
-        <button id="back-button">GO BACK TO THE DOGGY</button>
-    </section>
-    <div><br></div>
-
-</div>
-
+  <!-- Section that displays a dog fact and image -->
+  <div id="fact-section" style="display: none;">
+      <!-- Empty spacer for layout adjustment -->
+      <div class="space"></div>
+      
+      <section>
+          <!-- Main content area for the dog fact and image -->
+          <div id="content" aria-live="polite">
+              <p id="dog-fact">Dog Fact Loading…</p>
+              <p id="img">Cute Picture Loading…</p>
+          </div>
+          <!-- Button to go back to the video section -->
+          <button id="back-button">GO BACK TO THE DOGGY</button>
+      </section>
+      
+      <!-- Another spacer for layout adjustment -->
+      <div class="space"></div>
+  </div>
 </main>
+<!-- Link to the JavaScript file for functionality -->
 <script src="script.js"></script>
 </body>
 </html>
